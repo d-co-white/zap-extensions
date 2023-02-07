@@ -70,7 +70,11 @@ public class TlsConfig {
      */
     public TlsConfig(
             List<String> tlsProtocols, boolean alpnEnabled, List<String> applicationProtocols) {
-        this(tlsProtocols, alpnEnabled, applicationProtocols, null);
+        this(
+                tlsProtocols,
+                alpnEnabled,
+                applicationProtocols,
+                TlsUtils.APPLICATION_PROTOCOL_HTTP_1_1);
     }
 
     private TlsConfig(
